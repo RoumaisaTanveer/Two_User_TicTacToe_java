@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn!"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="10dp">
+
+        <Button android:id="@+id/button00" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button01" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button02" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button10" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button11" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button12" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button20" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button21" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+        <Button android:id="@+id/button22" style="@style/TicTacToeButton"
+            android:layout_margin="1dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Reset Game"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
